@@ -1,0 +1,40 @@
+package com.TodoList;
+
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Feed feed= new Feed();
+		
+		Scanner sc = new Scanner(System.in);
+		
+		
+		System.out.println("====[날짜출력]=====");
+		
+		
+		
+		System.out.println("1.피드");
+		
+		System.out.println("2.마이페이지");
+		
+		System.out.println("9.종료");
+		
+		
+		System.out.print("번호선택 => ");
+		String choice = sc.nextLine();
+		
+		if (choice == "1") {
+			feed.feedRun();
+		}else if (choice=="2") {
+			
+		}else if (choice=="9") {
+			
+		}
+		
+		
+	}//
+
+}//

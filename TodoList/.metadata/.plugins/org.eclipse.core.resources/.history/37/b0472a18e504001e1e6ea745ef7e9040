@@ -1,0 +1,11 @@
+package com.VO;
+
+public class MemberVO {
+
+	String id ;
+	String pw;
+	String nick;
+		
+}//
+
+

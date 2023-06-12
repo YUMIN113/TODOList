@@ -1,0 +1,44 @@
+
+public class test11 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+//		System.out.println("               |￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣|");
+//		System.out.println("        	       오늘 할일 입력" );
+//		System.out.println();
+//		System.out.print("                 => ");
+//		System.out.println();
+//		System.out.println("        	        # 입력 성공 ");	
+//		System.out.println("               |＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿|\r\n");
+		
+		
+		
+		
+//		System.out.println(
+//				  "┏━━━━━━━[Todo List]━━━━━━━━━━━━━━┓\r\n"
+//				+ "┃ \r\n"
+//				+ "┃ \r\n"
+//				+ "┃ \r\n"
+//				+ "┃ \r\n"
+//				+ "┃                 \r\n"
+//				+ "┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\r\n");
+//		
+//		
+//		System.out.println("┏━━━━━━━[Todo List]━━━━━━━━━━━━━━┓");
+//		System.out.println("┃");
+//		System.out.println("┃");
+//		System.out.println("┃");
+//		System.out.println("┃");
+//		System.out.println("┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛");
+//		
+		
+		
+		System.out.println("▣▣▣▣▣▣▣□□□");
+		System.out.println("V^√√v^──√v^√v^──√v^√√v^──");
+		System.out.println("X");
+
+		
+	}//
+
+}//

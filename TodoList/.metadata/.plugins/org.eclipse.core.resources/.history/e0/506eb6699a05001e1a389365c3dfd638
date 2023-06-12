@@ -1,0 +1,40 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.VO.TodoVO;
+
+public class Ascii {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.out.println(
+				  "┏━━Todo List━━━━┓\r\n"
+				+ "┃ \r\n"
+				+ "┃ Id : \"\r\n"
+				+ "┃ Pw : \"\r\n"
+				+ "┃ Ac : \"\r\n"
+				+ "┃                 *\r\n"
+				+ "┗━━━━━━━━━━━━━━━━┛\r\n");
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

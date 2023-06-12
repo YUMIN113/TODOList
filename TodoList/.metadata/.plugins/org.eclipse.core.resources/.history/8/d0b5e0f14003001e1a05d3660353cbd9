@@ -1,0 +1,19 @@
+package com.TodoList;
+
+public class MyPage {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		MyPageController myPagecon = new MyPageController();
+		
+		//==달성률 출력
+		
+		//기간 선택
+		
+		
+		
+		
+	}//
+
+}//

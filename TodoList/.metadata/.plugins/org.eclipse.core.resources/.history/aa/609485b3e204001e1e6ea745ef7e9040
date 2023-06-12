@@ -1,0 +1,49 @@
+package com.Controller;
+
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.Writer;
+
+public class MemberController {
+
+	String filePath = "C:/Temp/todo/member.txt";
+	
+	
+	// ===회원가입
+		public void fileInsert(String content, int lastNum) {
+
+			Writer writer = null;
+
+			try {
+
+				// 문자 기반 출력 스트림 생성
+				writer = new FileWriter(filePath, true); // 기존 문서에 이어쓰기
+
+				// 문자열 줄력
+				writer.write("\r\n" + (lastNum + 1) + "," + content + "," + date + "," + check);
+
+				writer.flush();
+				writer.close();
+
+				System.out.println("\n=====  추가 완료 =====");
+
+			} catch (IOException e) {
+				System.out.println("\n===== catch() :  IOException =====");
+				e.printStackTrace();
+			} finally {
+				// releases all system resources from the streams
+				try {
+					if (writer != null) {
+						writer.close();
+					}
+				} catch (IOException e) {
+					System.out.println("\n===== finally() :  IOException  =====");
+					e.printStackTrace();
+				}
+			}
+
+		}//
+	
+	
+	
+}//

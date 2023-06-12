@@ -1,0 +1,68 @@
+package com.TodoList;
+
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.Writer;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.List;
+
+public class FeedController {
+
+	
+	SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+	Calendar calendar = Calendar.getInstance();
+	String date = formatter.format(calendar.getTime());
+	
+	FileController fc = new FileController();
+
+	// ===오늘 할일 추가
+	public void insert(String content) {
+		// TODO Auto-generated method stub
+
+		fc.fileInsert(content);
+
+		
+
+	}//
+
+	// ===오늘 할일 조회
+	public void read() {
+		// TODO Auto-generated method stub
+
+		List<TodoVO> voList =fc.fileRead();
+		
+		System.out.println("====TodoList=====");
+		for (int i = 0; i < voList.size(); i++) {
+			
+			//if(voList.get(i).getDate())
+		
+			System.out.print(i+1);
+			System.out.print(" / "+voList.get(i).getContent());
+			System.out.print(" / "+voList.get(i).getDate());
+			
+			
+			System.out.println();
+	
+		}
+	}
+
+	// ===오늘 할일 수정
+	public void update() {
+		// TODO Auto-generated method stub
+
+	}
+
+	// ===오늘 할일 삭제
+	public void delete() {
+		// TODO Auto-generated method stub
+
+	}
+
+	// ===오늘 할일 체크
+	public void check() {
+		// TODO Auto-generated method stub
+
+	}
+
+}//

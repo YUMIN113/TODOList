@@ -1,0 +1,12 @@
+package com.TodoList;
+
+import java.sql.Date;
+
+public class TodoVO {
+
+	int num;
+	String content;
+	String date;
+	boolean check;
+	
+}

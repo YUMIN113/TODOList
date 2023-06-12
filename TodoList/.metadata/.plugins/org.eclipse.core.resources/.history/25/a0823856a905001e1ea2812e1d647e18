@@ -1,0 +1,55 @@
+package com.TodoList;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Scanner;
+
+import com.TodoList.mypage.controller.MyPage;
+
+public class App {
+
+	public  void appRun(String nick) {
+		
+		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+		Calendar calendar = Calendar.getInstance();
+		String date = formatter.format(calendar.getTime());
+
+		Feed feed= new Feed();
+		MyPage myPage = new MyPage();
+		
+		Scanner sc = new Scanner(System.in);
+		
+		
+		System.out.println("               |￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣|");
+		System.out.println("                  "+nick + "의 TodoList");
+		System.out.println("               |＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿|");
+		
+		System.out.println(nick + "의 TodoList");
+		System.out.println("====["+date+"]=====");
+		
+		
+		
+		System.out.println("1.피드");
+		
+		System.out.println("2.마이페이지");
+		
+		System.out.println("9.종료");
+		
+		
+		System.out.print("번호선택 => ");
+		String choice = sc.nextLine();
+		
+		if (choice.contains("1") ) {
+			feed.feedRun();
+		}else if (choice.contains("2")) {
+			myPage.mypageRun(sc);
+			
+		}else if (choice.contains("9")) {
+			System.out.println("=========TodoList 종료==========");
+			sc.close();
+		}
+		
+		
+	}//
+
+}//

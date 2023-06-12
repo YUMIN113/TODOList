@@ -1,0 +1,27 @@
+package com.TodoList;
+
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+		
+		
+		System.out.println("====[날짜출력]=====");
+		
+		
+		
+		System.out.println("1.피드");
+		
+		System.out.println("2.마이페이지");
+		
+		
+		System.out.print("번호선택 => ");
+		sc.nextLine();
+		
+	}//	
+
+}//
