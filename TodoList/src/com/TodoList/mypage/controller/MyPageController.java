@@ -102,8 +102,9 @@ public class MyPageController {
 	
 	// 달성률 가로 그래프로 표현하기
 	private void printWidthStar(int starNum) {
-		for(int j = 0; j < 1; j++) {
-        	System.out.print("  ");
+//		for(int j = 0; j < 1; j++) {
+//        	System.out.print("  ");
+		System.out.print("  ");
         	for(int k = 0; k < starNum; k++) {
         		System.out.print("◆");        		
         	}
@@ -111,7 +112,7 @@ public class MyPageController {
 				System.out.print("◇");			
 			}
         }
-	}
+//	}
 
 	// '주간 계획' 결과 출력
 	public void printWeekTodoList(int year, int month, int menuNum) {
